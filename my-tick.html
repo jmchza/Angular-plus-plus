@@ -1,0 +1,30 @@
+<div style="margin-left: 10px;">
+<!-- style="overflow-y: scroll; max-height: 340px; height: 305px;" -->
+	<div class="lines"></div>
+	<button type="button" ng-click="addLine(true)">&nbsp;&nbsp;Add&nbsp;&nbsp;</button>
+	<button type="button" ng-click="delLine($index)">&nbsp;&nbsp;Remove&nbsp;&nbsp;</button>
+	<button type="button" ng-click="onSave()">&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
+	<button type="button" ng-click="retrieve()">&nbsp;&nbsp;Get&nbsp;&nbsp;</button>
+	
+	<div ui-on-Drop="onDropIn($event,$data, items)" >
+		<ul class="list" >
+			<li ng-repeat="item in items track by $index" 
+				ui-draggable="true" drag="item"
+				on-drop-success="dropOutSuccessHandler($event, $index, items)">
+				
+				<input type="checkbox" value="{{item.id}}"
+						ng-model="item.checked"
+						ng-true-value="true"
+						ng-false-value="false">
+						
+				<input type="text" class="top-inputs"
+						ng-model="item.text" 
+						ng-keydown="keyDownHandler($index, $event, items.length)" 
+						ng-click="innerDisplayTick($index)"
+						ng-change="item.focus()"
+						ng-focus="item.isFocus"> 
+			</li>
+		</ul>
+	</div>
+	<div ng-transclude></div>
+</div>
