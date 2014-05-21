@@ -1,4 +1,4 @@
-mainModule.factory('tickService', [ 'localStorageService', function(localStorageService) {
+mainModule.factory('myService', [ 'localStorageService', function(localStorageService) {
 	var clear, save;
 		clear = function(){
 			localStorageService.clearAll();	
