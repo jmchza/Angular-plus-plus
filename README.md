@@ -1,4 +1,4 @@
 Angular-plus-plus
 =================
 
-Angular examples
+How to integrate Spring MVC with AngularJS
