@@ -57,8 +57,8 @@
 		</div>
 	</div>
 
-<script src="./static/js/controllers/communityCtrl.js" type="text/javascript"></script>
-<script src="./static/js/myTickComponent.js" type="text/javascript"></script>
+<script src="./static/js/controllers/myCtrl.js" type="text/javascript"></script>
+<script src="./static/js/myDir.js" type="text/javascript"></script>
 <script src="./static/js/draganddrop.js" type="text/javascript"></script>
 </body>
 </html>
