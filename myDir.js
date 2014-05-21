@@ -1,4 +1,4 @@
-.controller('myTickCtrl', function($scope){
+.controller('myDirCtrl', function($scope){
 	
 	$scope.items = [];
 	$scope.fixHeight = 39;
